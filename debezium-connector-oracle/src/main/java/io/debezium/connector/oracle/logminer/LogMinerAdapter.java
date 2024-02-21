@@ -159,7 +159,7 @@ public class LogMinerAdapter extends AbstractStreamingAdapter<LogMinerStreamingC
     }
 
     private Optional<Scn> getCurrentScn(Scn latestTableDdlScn, OracleConnection connection) throws SQLException {
-        final String query = "SELECT CURRENT_SCN FROM V$DATABASE";
+        final String query = "SELECT CURRENT_SCN" + " FROM V$DATABASE";
 
         Scn currentScn;
         do {
