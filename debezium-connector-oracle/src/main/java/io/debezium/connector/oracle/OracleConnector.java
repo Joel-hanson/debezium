@@ -33,6 +33,7 @@ public class OracleConnector extends RelationalBaseSourceConnector {
 
     @Override
     public String version() {
+        LOGGER.info("asfd")
         return Module.version();
     }
 
